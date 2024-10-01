@@ -11,6 +11,7 @@ import { Store } from '@ngrx/store';
   styleUrl: './app.component.scss',
   standalone: true,
   imports: [RouterOutlet, FormsModule, AsyncPipe, RouterLink],
+
 })
 export class AppComponent {
   _store = inject(Store);
@@ -26,4 +27,6 @@ export class AppComponent {
   onChange() {
     this._store.dispatch({ type: '[Home Page] Accept Terms' });
   }
+
+  title= 'dominiStore';
 }

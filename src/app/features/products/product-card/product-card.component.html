@@ -13,7 +13,8 @@
       {{ product.title | slice: 0 : 30 }}</a>
   </h2>
   <div class="my-2 flex-space-between">
-    <p class="product-price">{{ product.price | currency:'EUR':'symbol':'1.2-2': 'es' }}</p>
+    <p class="product-price">{{ product.price | currency:'$':'symbol':'1.2-2': 'en' }}</p>
+    <!--<p class="product-price">{{ product.price | currency:'EUR':'symbol':'1.2-2': 'es' }}</p>-->
     <!-- <app-add-to-cart (addToCartEvent)="onAddToCart()" /> -->
   </div>
 </div>
